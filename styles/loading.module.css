@@ -1,0 +1,37 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이 */
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 로딩 아이콘 스타일 */
+.loadingIcon {
+    border: 8px solid #f3f3f3; /* 아이콘 배경색 */
+    border-top: 8px solid tomato; /* 애니메이션 색상 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    width: 50px; /* 아이콘 크기 */
+    height: 50px; /* 아이콘 크기 */
+    animation: spin 1s linear infinite; /* 회전 애니메이션 */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* 처음 상태 */
+    }
+    100% {
+        transform: rotate(360deg); /* 360도 회전 */
+    }
+}

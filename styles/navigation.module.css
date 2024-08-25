@@ -1,0 +1,39 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414; /* 넷플릭스 느낌의 어두운 배경색 */
+    padding: 20px 40px; /* 상하 20px, 좌우 40px 패딩 */
+}
+
+.logo {
+    color: #e50914; /* 넷플릭스 로고 색상 */
+    font-size: 24px; /* 로고 글자 크기 */
+    font-weight: bold; /* 로고 글자 두께 */
+}
+
+.list {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    display: flex; /* 플렉스 박스 사용 */
+    gap: 30px; /* 리스트 아이템 간의 간격 */
+}
+
+.list li {
+    position: relative; /* 자식 요소의 위치를 기준으로 설정 */
+}
+
+.list a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    font-size: 16px; /* 글자 크기 */
+}
+
+.list a:hover {
+    color: tomato; /* 마우스 오버 시 색상 변경 */
+    font-weight: 600;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+}
+
+.active {
+    color: tomato; /* 활성화된 링크 색상 */
+    font-weight: bold; /* 강조된 링크 두께 */
+}

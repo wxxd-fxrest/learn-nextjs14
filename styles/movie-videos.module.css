@@ -1,0 +1,22 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* 간격을 줄여서 겹침 방지 */
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container iframe {
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+    width: 100%; /* iframe의 너비를 100%로 설정 */
+    height: 200px; /* 적절한 높이 설정 */
+    box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
+}
+
+.container iframe:hover {
+    opacity: 1;
+}

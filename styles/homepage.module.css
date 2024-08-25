@@ -1,0 +1,27 @@
+.movieGrid {
+    display: grid; /* 그리드 레이아웃 활성화 */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 카드 너비에 따라 자동으로 열 생성 */
+    gap: 15px; /* 카드 간의 간격 */
+    padding: 20px; /* 그리드 패딩 */
+}
+
+.movieCard {
+    background-color: #222; /* 카드 배경 색상 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    padding: 15px; /* 카드 내부 패딩 */
+    width: 200px; /* 카드 너비 */
+    text-align: center; /* 텍스트 센터 정렬 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 호버 시 애니메이션 효과 */
+    overflow: hidden; /* 내용이 카드 밖으로 나가지 않도록 */
+}
+
+.movieCard:hover {
+    transform: scale(1.05); /* 카드 크기 살짝 증가 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* 그림자 효과 추가 */
+}
+
+.movieCard img {
+    width: 100%; /* 이미지 너비 100% */
+    border-radius: 8px; /* 이미지 모서리 둥글게 */
+    margin-bottom: 10px; /* 이미지와 제목 간 간격 */
+}
