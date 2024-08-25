@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import styles from '../styles/homepage.module.css';
 
@@ -16,8 +17,10 @@ export default function Movie({ title, id, poster_path }: IMovieProps) {
     };
     return (
         <div key={id} className={styles.movieCard} onClick={onClick}>
-            <img src={poster_path} alt={title} />
-            <h3> {title} </h3>
+            <Link prefetch href={`/movies/${id}`} className={styles.movieTitle}>
+                <img src={poster_path} alt={title} />
+                {title}
+            </Link>
         </div>
     );
 }
